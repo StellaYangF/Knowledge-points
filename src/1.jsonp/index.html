@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jsonp</title>
+</head>
+<body>
+  <input id="input" type="text">
+  <ul id="list"></ul>
+
+  <script>
+    function jsonp({
+      url,
+      jsonp,
+      data
+    }) {
+      return new Promise(resolve => {
+        data = Object.keys(data).reduce((memo, key) => memo += `&${key}=${data[key]}`, '')
+       
+        // 创建 script 标签
+        const script = document.createElement('script')
+        // src 请求资源，不同于 XMLHttpRequest，没有同源限制
+        // 服务端响应数据作为cb的参数，直接调用此回调函数 cb
+        script.src = `${url}?jsonp=${jsonp}${data}`
+        // 追加到文档中，发起请求
+        document.body.appendChild(script)
+        // src 告诉服务端本地声明好的回调 cb，为全局方法
+        window[jsonp] = function(result) {
+          console.log('resolve before')
+          // 数据拿到后需要移除此次请求的 script 标签和暴露在全局上的 cb 方法
+          resolve(result)
+          delete window[jsonp]
+          document.body.removeChild(script)
+        }
+
+      })
+    }
+    document.getElementById('input').addEventListener('input', async e => {
+
+      const result = await jsonp({
+        url: 'http://localhost:3000/sugrec',
+        jsonp: 'cb',
+        data: { wd: e.target.value }
+      })
+      console.log('resolve after2')
+
+
+      const source = list.innerHTML
+      list.innerHTML = result.reduce((prev, item) => prev += `<li>${item}</li>`, source)
+    })
+
+  </script>
+</body>
+</html>

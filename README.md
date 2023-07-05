@@ -19,10 +19,13 @@ To learn a tech more effectively, classify it first, just like a map in mind. Th
 
 #### 1.网络
 
-- 跨域
+- [jsonp]()
+- HTTP access control(CORS)
 - security, defense
 - protocol
-- 缓存
+- HTTP caching
+- HTTP compression
+- HTTP content negotiation
 - browser render/ thread/ process
 - 请求方法
 - nodejs
@@ -52,10 +55,10 @@ To learn a tech more effectively, classify it first, just like a map in mind. Th
 
 #### Javascript & CSS
 
+- promise
 - scope
 - scope chain
 - prototype chain
-- promise 实现
 - iteration
 
 - bff
