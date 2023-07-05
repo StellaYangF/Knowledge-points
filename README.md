@@ -1,70 +1,66 @@
-# Knowledge-points
-# Tencent
-## One
-1. 性能优化
-2. http缓存
-3. 做过的有特点的项目
-4. 遇到的问题与解决方案
-5. toB和toC的区别
-6. 现场面对客户的经历
-7. 前端安全相关(着重中间人劫持)
-8. 为什么跳槽
-9. 职业规划
-10. 有什么问我的(团队简介、前端参与项目的过程)
+## Technical Thinking
 
-## Two
-1. 项目开发流程
-2. 对vuex的看法
-3. vue从data改变到页面渲染的过程
-4. 介绍状态机
-5. 组件设计原则
-6. 怎么看待组件层级嵌套很多层
-7. 前端安全防范措施
-8. 介绍oauth
-9. 怎么看待virtual dom
-10. 对flutter的了解
-11. weex和rn原理
-12. 大屏用的技术
-13. 大屏数据来源与管理
-14. websocket的使用场景
-15. pwa的使用
-16. 对http2的了解
-17. 对新技术的了解
-18. 职业规划
-19. 为什么想来腾讯
-20. 有什么问我的（团队协作方式、技术积累、对我的期待）
+Be passionate, positive and assertive
 
+前端技术发展至今，前几年如火如荼，2023年市场似乎已经饱和。尤其今年，国内外许多公司都发出裁员信息，已成事实。很多人说，程序员到了35岁就很被动，没有向上发展的潜能，甚至面临被裁的风险。
 
-## Three
-1. 为啥想离职，现公司不好吗
-2. 360企业安全和360啥关系
-3. 你认为蓝信为什么要有支付功能
-4. 剩下全聊简历上的项目，就不描述了
-5. 有什么问我的（招人原因 node使用场景、技术栈、项目集成. 方案）
+虽然现实如此，但我觉得还是有很多可能。互联网发展，是需要真正有技术沉淀的人取创造，推动社会进步，因此不要关注那么多负面消息，先竭尽所能深度学习，厚积薄发。《认知觉醒》作者观点不要急于求成，避难趋易，极度专注做好当下能掌控的事情，好运自会来临。
 
-## Four
-1. 介绍项目特色与难点
-2. 性能优化
-3. 对MVC MVP MVVM的了解
-4. 对SEO的了解
-5. 做了道逻辑题
-6. 国内前端行业的发展
-7. 有什么问我的（团队名称的意义、团队的业务、如何定位前. 端在设计团队的角色）
+踏实做好准备，注意力放在影响圈内。这个仓库建立于2019年，也是我从事前端开发的第一年，现重新来维护、记录前端的技术学习，沉淀自己的学习心得，更新思维方式。Never too late to start.
 
-## Five
-1. 同事怎么看待你
-2. 你的优点
-3. 你的缺点
-4. 你还能提高的地方
-5. 三年内的职业规划
-6. 其他的日常聊天
-7. 有什么问我的
-    1. 部门在 XXG 以至公司的定位（相比于公司其他方向的部门，我们的特点是？  相比于同方向其他公司的部门，我们的特点是？）
-    2. 设计师、产品、研发之间的合作
-    3. 部门对公司或对行业最大的贡献是？
+### Guideline
+
+To learn a tech more effectively, classify it first, just like a map in mind. Then to make it.
+
+#### Performance
+
+- code quality
+- split chunk
+
+#### 1.网络
+
+- 跨域
+- security, defense
+- protocol
+- 缓存
+- browser render/ thread/ process
+- 请求方法
+- nodejs
+- event loop
+
+#### 
+
+- webpack
+- rollup
+- vite
+- ast
+- acorn
+- lint
+
+#### 3.framework
+
+- vue
+- react
+- miniprogram
+- unit test
+
+#### 4.design patten
+- 
+
+#### Algorithm and data structure
 
 
+#### Javascript & CSS
 
+- scope
+- scope chain
+- prototype chain
+- promise 实现
+- iteration
 
+- bff
 
-# Ali
+#### Code Management
+
+- git
+- husky
